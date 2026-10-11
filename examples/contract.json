@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "required": ["APP_URL", "DATABASE_URL", "MAIL_API_KEY", "SESSION_SECRET"],
+  "optional": ["LOG_LEVEL", "CACHE_URL", "FEATURE_BETA"]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@jeffrog-256k1/env-lens",
+  "version": "0.1.0",
+  "description": "Check environment configuration without printing values.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "check": "node --experimental-strip-types src/cli.ts",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "build": "tsc --noEmit && node --experimental-strip-types scripts/build.ts",
+    "test:browser": "node --experimental-strip-types scripts/test-browser.ts",
+    "dev": "node scripts/serve.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/node": "22.20.5",
+    "playwright": "1.64.0",
+    "prettier": "3.9.10"
+  }
+}
